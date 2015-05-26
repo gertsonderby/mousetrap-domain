@@ -27,18 +27,18 @@ Mousetrap will, then, keep track of the domain you've set it to, and will only a
 
 ## API
 
-### `Mousetrap.bindDomain(domainName, keyComboOrSequence, handler)`
+##### `Mousetrap.bindDomain(domainName, keyComboOrSequence, handler)`
 
 Binds `handler` to be executed when `keyComboOrSequence` is entered - but only if `domainName` is the currently set domain. In every other way, it is exactly like `Mousetrap.bind()`. Both `domainName` and `keyComboOrSequence` may be passed as arrays containing domain names/key combinations as with the `Mousetrap.bind()`.
 
-### `Mousetrap.unbindDomain(domainName, keyComboOrSequence)`
+##### `Mousetrap.unbindDomain(domainName, keyComboOrSequence)`
 
 Unbinds the handler for `keyComboOrSequence` on `domainName`, without affecting any others.
 
-### `Mousetrap.setDomain(domainName)`
+##### `Mousetrap.setDomain(domainName)`
 
 Sets the currently active domain name. A domain name may be any string. If there are events bound to that domain name, they will be activated.
 
-### `Mousetrap.reset()`
+##### `Mousetrap.reset()`
 
 Useful for testing, this function wraps the original Mousetrap reset function to clear any domains entered, and reset the internal values used fo0r domain tracking.

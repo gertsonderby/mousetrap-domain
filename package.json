@@ -24,5 +24,12 @@
   "bugs": {
     "url": "https://github.com/gertsonderby/mousetrap-domain/issues"
   },
-  "homepage": "https://github.com/gertsonderby/mousetrap-domain#readme"
+  "homepage": "https://github.com/gertsonderby/mousetrap-domain#readme",
+  "devDependencies": {
+    "mocha": "2.2.5",
+    "unexpected": "7.5.0"
+  },
+  "dependencies": {
+    "mousetrap": ">=1.5.2"
+  }
 }

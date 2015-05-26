@@ -1,0 +1,28 @@
+{
+  "name": "mousetrap-domain",
+  "version": "0.0.1",
+  "description": "An extension for Mousetrap that allows switching between separate domains, each with a different set of handlers.",
+  "main": "lib/mousetrap-domain.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gertsonderby/mousetrap-domain.git"
+  },
+  "keywords": [
+    "mousetrap",
+    "keyboard",
+    "events",
+    "shortcuts"
+  ],
+  "author": {
+    "name": "Gert Sønderby",
+    "email": "gert.sonderby@gmail.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gertsonderby/mousetrap-domain/issues"
+  },
+  "homepage": "https://github.com/gertsonderby/mousetrap-domain#readme"
+}

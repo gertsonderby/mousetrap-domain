@@ -1,6 +1,8 @@
 # Mousetrap-Domain
 
-If you have an application which splits the viewport into discrete parts, with key events that only occur in one, or keys which have different effects depending on which is focused, you may have had to write key handlers a little like this:
+This is an extension to [Mousetrap](http://craig.is/killing/mice).
+
+If you have an application different view states, with key events that only occur in one, or keys which have different effects depending on which state the view is in, you may have had to write key handlers a little like this:
 
 ```JavaScript
 Mousetrap.bind('d', function () {
@@ -23,7 +25,7 @@ Mousetrap.bindDomain('second_domain', 'd', doThingsAnotherWay);
 Mousetrap.setDomain('second_domain');
 ```
 
-Mousetrap will, then, keep track of the domain you've set it to, and will only activate the events that are bound to that domain, or events that are global.
+Mousetrap will, then, keep track of the domain you've set it to and will only activate the events that are bound to that domain, or events that are global. This is useful for a one-page application that needs to switch between key combo sets, applications with complex markup that may need key handling in a set of elements not accomodated by the built-in element handling of Mousetrap, or any other situation where you have a situations that call for distinct sets of key handlers. Support for normal, global `bind()` is retained, although you should avoid using `bind()` and `bindDomain()` with the same key combination.
 
 ## API
 
@@ -41,4 +43,4 @@ Sets the currently active domain name. A domain name may be any string. If there
 
 ##### `Mousetrap.reset()`
 
-Useful for testing, this function wraps the original Mousetrap reset function to clear any domains entered, and reset the internal values used fo0r domain tracking.
+Useful for testing, this function wraps the original Mousetrap reset function to clear any domains entered, and reset the internal values used for domain tracking.

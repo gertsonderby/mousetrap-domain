@@ -1,5 +1,7 @@
 # Mousetrap-Domain
 
+[![Build Status](https://travis-ci.org/gertsonderby/mousetrap-domain.svg?branch=master)](https://travis-ci.org/gertsonderby/mousetrap-domain)
+
 This is an extension to [Mousetrap](http://craig.is/killing/mice).
 
 If you have an application different view states, with key events that only occur in one, or keys which have different effects depending on which state the view is in, you may have had to write key handlers a little like this:

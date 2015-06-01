@@ -12,8 +12,9 @@
   <div id="mocha"></div>
   <script>
     mocha.setup('bdd');
+    var expect = weknowhow.expect;
   </script>
-  <script src="domain-mousetrap.spec.js"></script>
+  <script src="mousetrap-domain.spec.js"></script>
   <script>
       mocha.checkLeaks();
       mocha.run();

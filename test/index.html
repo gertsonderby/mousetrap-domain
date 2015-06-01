@@ -5,6 +5,8 @@
   <link rel="stylesheet" href="../node_modules/mocha/mocha.css" />
 </head>
 <body>
+  <script src="../node_modules/es5-shim/es5-shim.js"></script>
+  <script src="../node_modules/es5-shim/es5-sham.js"></script>
   <script src="../node_modules/mocha/mocha.js"></script>
   <script src="../node_modules/unexpected/unexpected.js"></script>
   <script src="../node_modules/mousetrap/mousetrap.js"></script>
@@ -16,8 +18,11 @@
   </script>
   <script src="mousetrap-domain.spec.js"></script>
   <script>
-      mocha.checkLeaks();
-      mocha.run();
+      if (window.mochaPhantomJS) {
+          mochaPhantomJS.run();
+      } else {
+          mocha.run();
+      }
   </script>
 </body>
 </html>

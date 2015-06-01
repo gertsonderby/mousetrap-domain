@@ -4,7 +4,7 @@
   "description": "An extension for Mousetrap that allows switching between separate domains, each with a different set of handlers.",
   "main": "lib/mousetrap-domain.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node_modules/.bin/mocha-phantomjs test/index.html"
   },
   "repository": {
     "type": "git",
@@ -26,7 +26,9 @@
   },
   "homepage": "https://github.com/gertsonderby/mousetrap-domain#readme",
   "devDependencies": {
+    "es5-shim": "4.1.4",
     "mocha": "2.2.5",
+    "mocha-phantomjs": "3.5.3",
     "unexpected": "7.5.0"
   },
   "dependencies": {

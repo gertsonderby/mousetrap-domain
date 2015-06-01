@@ -1,6 +1,4 @@
-/*global weknowhow, describe, afterEach, beforeEach, it, Mousetrap*/
-var expect = weknowhow.expect.clone();
-
+/*global expect, describe, afterEach, beforeEach, it, Mousetrap*/
 describe('domain-mousetrap', function () {
     afterEach(function () {
         Mousetrap.reset();

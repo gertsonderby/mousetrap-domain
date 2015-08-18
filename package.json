@@ -1,6 +1,6 @@
 {
   "name": "mousetrap-domain",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "An extension for Mousetrap that allows switching between separate domains, each with a different set of handlers.",
   "main": "lib/mousetrap-domain.js",
   "scripts": {
